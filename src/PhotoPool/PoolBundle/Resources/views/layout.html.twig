@@ -1,0 +1,16 @@
+{% extends '::base.html.twig' %}
+
+{% block sidebar %}
+    <h1><a href=".">Manuel Devier</a></h1>
+      <ul id="menu">
+        {% for cat in pool.getCategories() %}
+          <li class="expand" >{{cat.name}}
+            <ul style="display: none" id="l_{{cat.id}}">
+          {% for subcat in cat.sub %}
+            <li><a href="{{subcat.path}}" id="{{ subcat.id }}" class="gallerie">{{subcat.name}}</a></li>
+          {% endfor %}
+          </ul>
+          </li>
+        {% endfor %}
+      </ul>
+{% endblock %}

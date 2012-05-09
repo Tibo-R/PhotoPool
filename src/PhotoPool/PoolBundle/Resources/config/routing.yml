@@ -1,0 +1,5 @@
+PhotoPoolPoolBundle_homepage:
+    pattern:  /
+    defaults: { _controller: PhotoPoolPoolBundle:Page:index }
+    requirements:
+        _method:  GET

@@ -1,0 +1,7 @@
+parameters:
+#    photo_pool_pool.example.class: PhotoPool\PoolBundle\Example
+
+services:
+#    photo_pool_pool.example:
+#        class: %photo_pool_pool.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
