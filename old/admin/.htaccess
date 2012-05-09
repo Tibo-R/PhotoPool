@@ -1,4 +1,0 @@
-AuthName "T'es autorisé à faire ça toi ?"
-AuthType Basic
-AuthUserFile "/homez.337/manueldei/www/v2/admin/.htpasswd"
-Require valid-user
