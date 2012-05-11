@@ -53,6 +53,11 @@ class Category
      */
     protected $galleries;
 
+    public function __toString()
+    {
+        return $this->getTitle();
+    }
+
     public function __construct()
     {
         $this->galleries = new ArrayCollection();

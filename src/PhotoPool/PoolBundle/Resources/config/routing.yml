@@ -3,3 +3,87 @@ PhotoPoolPoolBundle_homepage:
     defaults: { _controller: PhotoPoolPoolBundle:Page:index }
     requirements:
         _method:  GET
+
+pool:
+    pattern:  /admin
+    defaults: { _controller: PhotoPoolPoolBundle:Pool:index }
+
+pool_new:
+    pattern:  /admin/new/pool
+    defaults: { _controller: PhotoPoolPoolBundle:Pool:new }
+
+pool_create:
+    pattern:  /admin/create/pool
+    defaults: { _controller: PhotoPoolPoolBundle:Pool:create }
+
+pool_show:
+    pattern:  /pool/show/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Pool:show }
+
+pool_edit:
+    pattern:  /pool/edit/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Pool:edit }
+
+pool_delete:
+    pattern:  /pool/delete/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Pool:delete }
+
+pool_update:
+    pattern:  /pool/update/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Pool:update }
+
+category:
+    pattern:  /categories
+    defaults: { _controller: PhotoPoolPoolBundle:Category:index }
+
+category_new:
+    pattern:  /admin/new/category
+    defaults: { _controller: PhotoPoolPoolBundle:Category:new }
+
+category_create:
+    pattern:  /admin/create/category
+    defaults: { _controller: PhotoPoolPoolBundle:Category:create }
+
+category_show:
+    pattern:  /category/show/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Category:show }
+
+category_edit:
+    pattern:  /category/edit/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Category:edit }
+
+category_delete:
+    pattern:  /category/delete/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Category:delete }
+
+category_update:
+    pattern:  /category/update/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Category:update }
+
+gallery:
+    pattern:  /galleries
+    defaults: { _controller: PhotoPoolPoolBundle:Gallery:index }
+
+gallery_new:
+    pattern:  /admin/new/gallery
+    defaults: { _controller: PhotoPoolPoolBundle:Gallery:new }
+
+gallery_create:
+    pattern:  /admin/create/gallery
+    defaults: { _controller: PhotoPoolPoolBundle:Gallery:create }
+
+gallery_show:
+    pattern:  /gallery/show/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Gallery:show }
+
+gallery_edit:
+    pattern:  /gallery/edit/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Gallery:edit }
+
+gallery_delete:
+    pattern:  /gallery/delete/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Gallery:delete }
+
+gallery_update:
+    pattern:  /gallery/update/{id}
+    defaults: { _controller: PhotoPoolPoolBundle:Gallery:update }

@@ -38,6 +38,11 @@ class Pool
      */
     protected $categories;
 
+    public function __toString()
+    {
+        return $this->getTitle();
+    }
+
     public function __construct()
     {
         $this->categories = new ArrayCollection();
